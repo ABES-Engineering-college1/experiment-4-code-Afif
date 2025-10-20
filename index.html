@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+</head>
+
+<body>
+    <center>
+        <form action="./response.html" target="_blank" name="Hotel Booking Form" method="get">
+            <fieldset style="display:inline-block; text-align:left; padding:20px;">
+                <legend><b>Hotel Booking Form</b></legend>
+
+                <label for="name">Full Name ⇒ </label>
+                <input type="text" name="name" placeholder="Enter Your Full Name" required>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <label for="email">Email ⇒ </label>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <label for="phone">Phone Number ⇒ </label>
+                <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your 10-digit Phone Number"
+                    required>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <label for="check-in">Check-in Date ⇒ </label>
+                <input type="date" name="check-in" id="check-in" required>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <label for="check-out">Check-out Date ⇒ </label>
+                <input type="date" name="check-out" id="check-out" required>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <label for="room">Room Type ⇒ </label>
+                <select name="room" id="room" required>
+                    <option value="">Select</option>
+                    <option value="SINGLE ROOM">SINGLE ROOM</option>
+                    <option value="DOUBLE ROOM">DOUBLE ROOM</option>
+                    <option value="SUITE">SUITE</option>
+                    <option value="DELUXE ROOM">DELUXE ROOM</option>
+                </select>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <label for="guests">No. of Guests ⇒ </label>
+                <input type="number" name="guests" id="guests" placeholder="No. of Guests" min="1" required>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <label for="request"><center>Special Requests ⇒</center> </label>
+                <br>
+                <textarea name="request" id="request" rows="8" cols="50"
+                    placeholder="Enter any special requests..."></textarea>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <center>
+                    <input type="submit" value="Book Now">
+                    <input type="reset" value="Reset Form">
+                </center>
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>
